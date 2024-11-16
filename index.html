@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  </head>
+  <body>
+    
+ <header id="header"></header>
+ <div id="searchAndFilter"></div>
+    <div id="countryContainer" class="bg-slate-200 w-full h-full grid md:grid-cols-4 gap-y-4 justify-items-center items-center">
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/Country.ts"></script>
+    <script type="module" src="/src/api.ts"></script>
+    <script type="module">
+      import { createHeader } from './src/header';
+      document.addEventListener('DOMContentLoaded', () => {
+        createHeader();
+      });
+    </script>
+
+<script type="module">
+  import { createSearchAndFilter } from './src/searchAndFilter';
+  document.addEventListener('DOMContentLoaded', () => {
+    createSearchAndFilter();
+  });
+</script>
+
+    
+  </body>
+</html>
