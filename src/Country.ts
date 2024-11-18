@@ -14,7 +14,7 @@ export async function renderCountries() :Promise<void> {
     countries.forEach(country =>
     {
       const coutnryCard = document.createElement('figure');
-      coutnryCard.className = 'bg-white  flex-col items-center';
+      coutnryCard.className = 'bg-white  items-center';
       const img = document.createElement('img');
       img.src = country.flag;
       img.style.width = '200px';

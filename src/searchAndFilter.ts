@@ -1,6 +1,6 @@
 export function createSearchAndFilter() {
     const container = document.createElement('div');
-    container.className = 'flex flex-col md:flex-row justify-between items-center gap-4 p-6 bg-white shadow-md';
+    container.className = 'flex flex-col md:flex-row justify-between items-center gap-4 p-6  bg-veryLightGray shadow-md';
   
     // Search Box
     const searchBox = document.createElement('div');
@@ -10,11 +10,11 @@ export function createSearchAndFilter() {
     searchInput.type = 'text';
     searchInput.placeholder = 'Search for a country...';
     searchInput.className =
-      'w-full p-3 pl-10 text-gray-900 bg-gray-100 rounded-lg shadow-md focus:outline-none focus:ring focus:ring-blue-500';
+      'w-full p-3 pl-10 bg-white text-darkGray  rounded-lg shadow-md focus:outline-none focus:ring focus:ring-blue-500';
   
     const searchIcon = document.createElement('span');
     searchIcon.className =
-      'material-icons absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-400';
+      'material-icons  text-darkGray absolute top-1/2 left-3 transform -translate-y-1/2 ';
     searchIcon.textContent = 'search';
   
     searchBox.appendChild(searchIcon);
@@ -22,11 +22,11 @@ export function createSearchAndFilter() {
   
     // Filter Box
     const filterBox = document.createElement('div');
-    filterBox.className = 'relative w-full md:w-1/4';
+    filterBox.className = 'relative w-full md:w-1/4 ';
   
     const filterSelect = document.createElement('select');
     filterSelect.className =
-      'w-full p-3 text-gray-900 bg-gray-100 rounded-lg shadow-md focus:outline-none focus:ring focus:ring-blue-500';
+      'w-full p-3 text-veryDarkBlueText bg-white rounded-lg shadow-md focus:outline-none focus:ring focus:ring-blue-500';
     filterSelect.id = 'regionFilter';
   
     const filterOptions = ['Filter by Region', 'Africa', 'America', 'Asia', 'Europe', 'Oceania'];
