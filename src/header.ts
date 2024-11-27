@@ -1,7 +1,7 @@
 export function createHeader() {
   const header = document.getElementById('header');
   const headerElement = document.createElement('header');
-  headerElement.className = 'flex  justify-between items-center  p-6 bg-white  shadow-md';
+  headerElement.className = 'flex  justify-between items-center  p-6 bg-white ';
   const title = document.createElement('span');
   title.textContent = 'Where in the world?';
   title.className = 'font-sans font-extrabold text-veryDarkBlueText';
